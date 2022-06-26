@@ -1,0 +1,44 @@
+{
+	"name": "@costaline/craco-plugin-scoped-css",
+	"version": "0.1.0",
+	"author": "Constantine Zubarev <kv.zubarev@gmail.com>",
+	"description": "Scoped styles for react with craco",
+	"keywords": [
+		"react",
+		"cra",
+		"craco",
+		"css",
+		"scoped"
+	],
+	"license": "ISC",
+	"homepage": "https://github.com/costaline/craco-plugin-scoped-css#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/costaline/craco-plugin-scoped-css.git"
+	},
+	"bugs": {
+		"url": "https://github.com/costaline/craco-plugin-scoped-css/issues"
+	},
+	"main": "lib/index.cjs.js",
+	"module": "lib/index.esm.js",
+	"files": [
+		"lib",
+		"src"
+	],
+	"scripts": {
+		"dev": "rollup -c -w",
+		"build": "rollup -c"
+	},
+	"dependencies": {
+		"babel-plugin-react-scoped-css": "^1.1.1",
+		"scoped-css-loader": "^1.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.17.5",
+		"@babel/preset-env": "^7.16.11",
+		"@craco/craco": ">=6",
+		"@rollup/plugin-babel": "^5.3.1",
+		"rollup": "^2.68.0",
+		"rollup-plugin-clear": "^2.0.7"
+	}
+}
